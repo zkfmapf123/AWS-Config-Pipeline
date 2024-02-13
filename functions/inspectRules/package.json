@@ -1,0 +1,20 @@
+{
+  "name": "inspectrules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf function.zip",
+    "zip": "zip -r function.zip index.mjs package*.json",
+    "deploy": "aws lambda update-function-code --function-name awsConfigTagFunction --zip-file fileb://function.zip",
+    "start": "npm run clean && npm run zip && npm run deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1555.0"
+  }
+}

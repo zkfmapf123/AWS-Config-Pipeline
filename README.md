@@ -5,3 +5,9 @@
 
 ![1](./public/1.png)
 
+## 람다함수가... Amazon Linux로 바뀌었음
+
+![2](./public/2.png)
+![3](./public/3.png)
+
+
